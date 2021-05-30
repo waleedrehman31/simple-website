@@ -1,0 +1,65 @@
+:root {
+  --white: #ffffff;
+  --black: #1d1f21;
+}
+
+* {
+  color: var(--fontColor);
+  font-family: helvetica;
+}
+
+body {
+  background: var(--bg);
+}
+
+ul {
+  font-family: helvetica;
+}
+
+li {
+  list-style: circle;
+}
+
+.list {
+  list-style: square;
+}
+
+#msg {
+  font-family: monospace;
+}
+
+.btn {
+  color: var(--btnFontColor);
+  background-color: var(--btnBg);
+}
+
+.btn {
+  position: absolute;
+  top: 20px;
+  left: 83%;
+  height: 35px;
+  width: 200px;
+  border-radius: 25px;
+  border: none;
+  color: var(--btnFontColor);
+  background-color: var(--btnBg);
+  cursor: pointer;
+}
+
+.btn:focus {
+  outline-style: none;
+}
+
+.light-theme {
+  --bg: var(--white);
+  --fontColor: var(--black);
+  --btnBg: var(--black);
+  --btnFontColor: var(--white);
+}
+
+.dark-theme {
+  --bg: var(--black);
+  --fontColor: var(--white);
+  --btnBg: var(--white);
+  --btnFontColor: var(--black);
+}
